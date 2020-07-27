@@ -18,6 +18,7 @@ app.get("/", (req, res) => {
       
         res.on('data', (d) => {
           process.stdout.write(d);
+          console.log(d);
           res.send(d);
         });
 
